@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">American Burbell Fitness</string>
+        <!-- The Company name -->
+        <string name="name">American Barbell Club</string>
+        <!-- Description-->
+        <string name="description">Provides personnel and equipment to assist its members in the achievement of their fitness goals</string>
+        <!-- Open Hours -->
+        <string name="openHours">Mon-Thu   5:00AM-12:00PM\n Fri       5:00AM-10:00PM\n Sat-Sun   5:00AM- 9:00PM"</string>
+        <!-- Address-->
+        <string name="Address">1900 Duane Ave,Santa Clara, CA 95054</string>
+    </resources>

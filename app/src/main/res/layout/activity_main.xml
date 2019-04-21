@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="#ffffffff"
+    tools:context="com.maaxtronics.americanburbellfitness.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/description"
+            android:textColor="#000000"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Hours:"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/openHours"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Address"
+            android:textSize="15sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/launchMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Directions"
+                android:onClick="launchMap"
+                />
+            <Button
+                android:layout_marginLeft="8dp"
+                android:id="@+id/closeApp"
+                android:layout_toRightOf="@id/launchMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="close"
+                android:onClick="closeApp"
+                />
+           <TextView
+               android:layout_toRightOf="@id/closeApp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="12dp"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="18sp"
+               android:text="(123)666-8889"
+               android:autoLink="phone"/>
+
+        </RelativeLayout>
+
+
+      </LinearLayout>
+</ScrollView>
+
